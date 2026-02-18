@@ -86,7 +86,7 @@ module.exports.farmer_signup = async function (req, res) {
 
                         twilio.messages
                             .create({
-                                from: "+12056289637",
+                                from: process.env.TWILIO_PHONE_NUMBER,
                                 to: "+91" + req.body.Mobilenum,
                                 body: "Farmer ID : " + data.Farmerid,
                             }).then(message => console.log(message.sid)).done();
@@ -346,7 +346,7 @@ module.exports.mobilenumverify = function (req, res) {
         otp = otpGenerator.generate(4, { upperCaseAlphabets: false, lowerCaseAlphabets: false, specialChars: false });
         twilio.messages
             .create({
-                from: "+12056289637",
+                from: process.env.TWILIO_PHONE_NUMBER,
                 to: "+91" + req.params.Mobilenum,
                 body: "One time password(OTP): " + otp,
             })
@@ -437,7 +437,7 @@ module.exports.temp = function (req, res) {
     client.messages
         .create({
             body: 'જય જવાન જય કિશાન',
-            from: 'whatsapp:+14155238886',
+            from: process.env.TWILIO_WHATSAPP_NUMBER,
             to: 'whatsapp:+917203955356'
         })
         .then(function (message) {
