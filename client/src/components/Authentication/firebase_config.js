@@ -7,13 +7,12 @@ import { initializeApp } from "firebase/app";
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBfRVN3vW6iHDIzZlEga6IIO9OMe5ng2xQ",
-  authDomain: "growfarm-7f3cb.firebaseapp.com",
-  projectId: "growfarm-7f3cb",
-  storageBucket: "growfarm-7f3cb.appspot.com",
-  messagingSenderId: "676183267260",
-  appId: "1:676183267260:web:6b2b26c50ffbba9258bdb9",
-  measurementId: "G-037DYM8V9C"
+  apiKey: "AIzaSyDi06XbuSNWgvNzp1GmsplAB55x-4QjBGY",
+  authDomain: "agrix-abc93.firebaseapp.com",
+  projectId: "agrix-abc93",
+  storageBucket: "agrix-abc93.firebasestorage.app",
+  messagingSenderId: "528221275885",
+  appId: "1:528221275885:web:28b4f32a221cacba3faee4"
 };
 
 // const firebaseConfig = {
